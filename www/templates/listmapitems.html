@@ -1,0 +1,32 @@
+<ion-view view-title="Activity">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+	
+<ion-item ng-show="positions.length==0" >
+No items to display
+</ion-item>
+<ion-list   class="animate-fade-slide-in" >
+  
+  <div class="item " ng-repeat="item in positions " >
+  test
+            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url('img/agile.png');"></span>
+                    <strong>Jon Snow</strong> knows nothing.
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubbles positive"></i> 6
+                        <i class="icon ion-heart assertive"></i> 23
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> just now
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</ion-list>
+
+
+       
+       
+    </ion-content>
+</ion-view>
